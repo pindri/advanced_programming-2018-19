@@ -1,12 +1,10 @@
-SRC = 01_functions.cc             \
-      02_templates.cc             \
-      03_wrong_args.cc            \
-      04_vars_pointers_refs.cc    \
-      05_swaps.cc                 \
-      06_static_arrays.cc         \
-      07_dynamic_arrays.cc
-
-SRC=$(wildcard *.cc)
+SRC = 01_auto.cc                 \
+      02_const_and_pointers.cc   \
+      03_special_pointers.cc     \
+      04_command_line_args.cc    \
+      05_matrices.cc             \
+      06_std_arrays.cc           \
+      07_std_vectors.cc
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -g -std=c++11
@@ -36,3 +34,7 @@ clean:
 	rm -f $(EXE) *~
 
 .PHONY: clean
+
+01_auto.x : CXXFLAGS += -Wno-unused-variable
+02_const_and_pointers.x : CXXFLAGS += -Wno-unused-variable
+03_special_pointers.x : CXXFLAGS += -Wno-unused-variable -Wno-unused-but-set-variable -Wno-uninitialized

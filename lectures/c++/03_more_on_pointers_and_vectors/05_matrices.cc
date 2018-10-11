@@ -37,7 +37,7 @@ int main() {
   int* d_ma = new int[6 * 5]{};
 
   std::cout << std::endl;
-  
+
   print_ma(d_ma, 6, 5);
   delete[] d_ma;
 
@@ -51,4 +51,3 @@ void print_ma(int* p, int row, int col) {
     std::cout << std::endl;
   }
 }
-
