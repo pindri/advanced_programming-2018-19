@@ -1,0 +1,46 @@
+Conventions for extentions
+.cc, .cpp, .cxx, .CC while headers .h, .hpp
+
+The default compiler, for Linux, is g++ (for Mac is clang++)
+
+All the exe in c++ (and in c as well) start by executing the main function, which must return a number:
+the shorter program you can write is 
+
+$ int main(){}
+
+the integer number that the program returns is, in linux, saved and stored in a variable nambed ?. In the 
+main function if no return is explicit it returns a zero (in any other function you must return something).
+To verify what the program returned
+>> echo $?
+
+
+c++ is a statically typed language, so the type of everything (every object, variable) must be known at compilation time.
+Compilation:
+
+src --> preprocessor --> compiler --> object file (.o) --> linker --> exe
+
+the preprocessor copies the content of headers in the src file. Then the compiler creates various object files (the compilation
+process ends here). And then a linker takes all the .o files and creates an exe. 
+
+A type is a concrete representation of a concept. There are built in types.
+
+The make files can be used to compile all the sources at the same time
+>> make
+or in parallel
+>> make -j
+and to delete the programs
+>> make clean
+
+
+EXAMPLES
+
+the universal initialization of a variable in c++ is 
+$ int a{2};
+And it is useful because everything can be initialized in this whay (not true for the
+= initialization). NOTE: you can use it ONLY on initialization.
+Moreover int a = 7.9 does not complain, while int a{7.9} does.
+
+From c++11 there is the "constexpr", to evalueate constants at compile time.
+
+When writing a function you can separate a declaration (just int function()) and the
+definition (that can be put under main())

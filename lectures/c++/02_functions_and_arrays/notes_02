@@ -1,0 +1,93 @@
+Function overloading: implementing two functions with the same name but different arguments (in particular if the number of arguments is the same they must have different types). This is possible in c++ but not in c.
+NOTE: when you just decalre a function you can omit the names, and use just a list of types.
+
+c++ introduced TEMPLATES
+> template<typename T, ...>
+now T is whatever type
+
+
+so now
+> T funct(const T a, const T b)
+> main{}
+> //now that I use T I need to repeat
+> template<typename T>
+> T func(const T a, const T b){}
+
+If the function is not defined for a specific type then the compiler complains
+
+to call the function
+
+> func<int>(a,b)
+but if the template can automatically deduced from the type of the argumens <int> can be omitted.
+
+If you call the function using an integer ad a double, c++ will probably call the function using both double, because it does not loose information
+
+You can ask the compiler to use a specific type
+> funct<int>(c,d)
+where even if c and d are double, they will be treated as integers
+
+to see the binaries use
+$ nm -C program.x
+
+03
+
+ram can be divided into two parts, stack and heap. Variables that are put in the stack are automatically deleted when they go out of scope. Variables in heap remain still until sombody tells them to be deleated. Variables are automatically created in the stack. In this case x and y are created in a level of stack reserved into the main. When I then use swap it creates its own stack. Functions can only see what's inside their level of stack (and of course global variables).
+main creates the two variables x and y
+swap creates a, b, t. a and t take their variables from x, b from y.
+Then I actually swap the values of a and b, but when I exit the function that level of stack gets deleted, and x and y were untouched.
+
+REMINDER
+ram can be seen as a long sequence of cells
+type:	   specifies the number of cells to be reserved for an object, and defines the admitted operations
+value:	   is the actual bits in the cells
+object:	   is that piece of memory
+variable:  is a named object
+
+in c++ you can use "pointers" and "references" that can be use to change values of other variables
+
+04 REFERENCES AND POINTERS
+
+a reference is an alias, it has the same content and the same position of what it refers to. They can be thought as pointers that dereference themselbes
+There are two ways to change the value of a variable
+> double d{9};
+> double& ref{d};
+> double* ptr{&d};
+ now
+> ref = 1;
+> *ptf = 2;
+both change the value of d
+
+05 SWAPS
+
+NOTE: if I have a function where things stay constant then it's bettere not to call by reference (because we need to pass a 8bytes pointer, instead of maybe a 4 bytes integer)
+
+
+06 STATIC ARRAYS
+
+in c++ arrays are statically defined, the argument must be a const expression
+> int a[6]
+then you can define dynamic arrays too
+NOTE: there is no range check at compilation time: you can get a segmentation break, or corrupt some other variable.
+
+NAMESPACES
+
+> namespace pippo {void dwim(), ...}
+so everytime dwim() is perposed by pippo. In std::cout std is the namespace.
+
+NOTE: using std::size_t as a type in loops is useful since it is a long long unsigned int and it avoids overflow bugs.
+
+Array elements are consecutive in memory, and when you just initialize one the values are random.
+
+
+
+07 DYNAMICAL ARRAYS
+
+> std::cout << "Please insert array lenght: ";
+> std::size_t n;
+> std::cin >> n;
+> int* da{new int[n]};
+
+the dynamic array da is an int stack, a point to integer that lives in the stack. New takes a variable, looks at the heap for a space of that given lenght, reserves it and gives a pointer to the first position. New is like malloc in c, there is no such thing as realloc. Even if malloc exists in c++, it should not be used. Expecially when using custom types, new calls the constructor of the object while malloc not, so segmentation faults may happend.
+After your program ends, that portion of memory, if not released, stays occupied.
+> delete[] da;
+note that delete requires a pointer.
