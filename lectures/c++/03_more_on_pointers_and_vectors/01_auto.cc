@@ -17,6 +17,7 @@ T* init(const std::size_t l) {
 
 #endif
 
+
 int main() {
   auto b = true;          // a bool
   auto ch = 'x';          // a char

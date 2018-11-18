@@ -23,8 +23,10 @@ class Animal {
 class Dog : public Animal {
  public:
   void speak() const noexcept override { std::cout << "Bau\n"; }
-  Dog() = default;
-  Dog(const unsigned int a, const double d) : Animal{a, d} {}
+  //Dog() = default;
+  //Dog(const unsigned int a, const double d) : Animal{a, d} {}
+  // In this case I can populate the child with the same interface as the parent:
+  using Animal::Animal; // Note that this 'changes' the name automatically and uses Dog
 };
 
 class Snake : public Animal {
