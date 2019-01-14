@@ -1,0 +1,100 @@
+\hypertarget{class_date}{}\section{Date Class Reference}
+\label{class_date}\index{Date@{Date}}
+
+
+Implement a date class.  
+
+
+
+
+{\ttfamily \#include $<$date.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_date_a38b18986a934a931bcef3979697aa871}\label{class_date_a38b18986a934a931bcef3979697aa871}} 
+unsigned int \hyperlink{class_date_a38b18986a934a931bcef3979697aa871}{day} () const
+\begin{DoxyCompactList}\small\item\em Returns the value of the day variable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_date_a71889264c9f704db5a6e515f0739026e}\label{class_date_a71889264c9f704db5a6e515f0739026e}} 
+\hyperlink{date_8h_a674553c60dd4ed7297e6c18d8139e067}{m\+\_\+enum} \hyperlink{class_date_a71889264c9f704db5a6e515f0739026e}{month} () const
+\begin{DoxyCompactList}\small\item\em Returns the value of the month variable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_date_adb59de8d1ac3b04cbd57be3b551be2dc}\label{class_date_adb59de8d1ac3b04cbd57be3b551be2dc}} 
+int \hyperlink{class_date_adb59de8d1ac3b04cbd57be3b551be2dc}{year} () const
+\begin{DoxyCompactList}\small\item\em Returns the value of the year variable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_date_a038ecf65e8734086f8df30659f770cc2}\label{class_date_a038ecf65e8734086f8df30659f770cc2}} 
+\hyperlink{class_date_a038ecf65e8734086f8df30659f770cc2}{Date} (unsigned int \+\_\+d, \hyperlink{date_8h_a674553c60dd4ed7297e6c18d8139e067}{m\+\_\+enum} \+\_\+m, int \+\_\+y)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_date}{Date} constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_af12996155259f3fb64206bf250d50e10}{is\+\_\+leap} ()
+\begin{DoxyCompactList}\small\item\em Checks if the year is leap. \end{DoxyCompactList}\item 
+void \hyperlink{class_date_a1060f2334b942a33f16e76471225d0db}{add\+\_\+day} ()
+\begin{DoxyCompactList}\small\item\em Adds a single day to the current date. \end{DoxyCompactList}\item 
+void \hyperlink{class_date_a6bd05d49058041113ee34870a1268f2c}{add\+\_\+days} (const int n)
+\begin{DoxyCompactList}\small\item\em Adds multiple days. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implement a date class. 
+
+Contains function to add days and check if a year is leap 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_date_a1060f2334b942a33f16e76471225d0db}\label{class_date_a1060f2334b942a33f16e76471225d0db}} 
+\index{Date@{Date}!add\+\_\+day@{add\+\_\+day}}
+\index{add\+\_\+day@{add\+\_\+day}!Date@{Date}}
+\subsubsection{\texorpdfstring{add\+\_\+day()}{add\_day()}}
+{\footnotesize\ttfamily void Date\+::add\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds a single day to the current date. 
+
+Adds a single day checking if the month or the year needs to advance as well. 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_date_a6bd05d49058041113ee34870a1268f2c}\label{class_date_a6bd05d49058041113ee34870a1268f2c}} 
+\index{Date@{Date}!add\+\_\+days@{add\+\_\+days}}
+\index{add\+\_\+days@{add\+\_\+days}!Date@{Date}}
+\subsubsection{\texorpdfstring{add\+\_\+days()}{add\_days()}}
+{\footnotesize\ttfamily void Date\+::add\+\_\+days (\begin{DoxyParamCaption}\item[{const int}]{n }\end{DoxyParamCaption})}
+
+
+
+Adds multiple days. 
+
+Calls \hyperlink{class_date_a1060f2334b942a33f16e76471225d0db}{add\+\_\+day()} n times. 
+\begin{DoxyParams}{Parameters}
+{\em n} & number of days to e added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_date_af12996155259f3fb64206bf250d50e10}\label{class_date_af12996155259f3fb64206bf250d50e10}} 
+\index{Date@{Date}!is\+\_\+leap@{is\+\_\+leap}}
+\index{is\+\_\+leap@{is\+\_\+leap}!Date@{Date}}
+\subsubsection{\texorpdfstring{is\+\_\+leap()}{is\_leap()}}
+{\footnotesize\ttfamily bool Date\+::is\+\_\+leap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the year is leap. 
+
+Returns True if the year is divisible by 4 or by 400 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/w-\/wilson/\+D\+S\+S\+C/first\+\_\+year/\+A\+P/advanced\+\_\+programming-\/2018-\/19/exercises/c++/04\+\_\+custom\+\_\+types/date/include/\hyperlink{date_8h}{date.\+h}\item 
+\hyperlink{date_8cc}{date.\+cc}\end{DoxyCompactItemize}

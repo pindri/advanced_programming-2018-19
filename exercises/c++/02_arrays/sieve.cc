@@ -1,10 +1,20 @@
+/**
+ * @file sieve.cc
+ * @brief Implements the Sieve of Eratosthenes to compute prime numbers.
+ * 
+ * Computes and prints the prime numbers less or equal than
+ * a given integer n though an implementation of the Sieve of Eratosthenes.
+ * The algorithm is optimized by enumerating the multiples
+ * of each prime i starting from i*i.
+ *
+ * @author Patrick Indri
+ * @date 13/01/19
+ */
+
+
 #include <iostream>
 #include <cmath>
 
-/*
- * This code computes and prints the prime numbers less or equal than a given integer n though an implementation of the Sieve of Eratosthenes.
- * The algorithm is optimized by enumerating the multiples of each prime i starting from i*i.
- * */
 
 
 int main() {

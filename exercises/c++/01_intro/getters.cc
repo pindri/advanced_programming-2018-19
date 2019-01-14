@@ -1,3 +1,13 @@
+/**
+ * @file getters.cc
+ * @brief Reads from stdin until a valid number is fed
+ *
+ * @author Patrick Indri
+ * @date 10/10/18
+ */
+
+
+
 #include <iostream>
 #include <string>
 
@@ -22,16 +32,16 @@ double get_double(){
     
     std::cout << "Insert a double" << std::endl;
 
-    double i;
-    while(!(std::cin >> i)){
+    double d;
+    while(!(std::cin >> d)){
         std::cout << "Invalid input\n";
         std::cin.clear();
         std::cin.ignore();
     }
 
-    std::cout << "You have fed: " << i << std::endl;
+    std::cout << "You have fed: " << d << std::endl;
 
-    return i;
+    return d;
 }
 
 

@@ -1,3 +1,11 @@
+/**
+ * @file uom.cc
+ * @brief Converts inches in meters and the other way around.
+ *
+ * @author Patrick Indri
+ * @date 10/10/18
+ */
+
 #include <iostream>
 #include <string>
 

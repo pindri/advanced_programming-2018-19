@@ -1,3 +1,12 @@
+/**
+ * @file uniq.cc
+ * @brief Implementation of 'uniq -c' command
+ *
+ * @author Patrick Indri
+ * @date 10/10/18
+ */
+
+
 #include <iostream>
 #include <string>
 

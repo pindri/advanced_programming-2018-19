@@ -1,0 +1,75 @@
+\hypertarget{date_8h}{}\section{/home/w-\/wilson/\+D\+S\+S\+C/first\+\_\+year/\+A\+P/advanced\+\_\+programming-\/2018-\/19/exercises/c++/04\+\_\+custom\+\_\+types/date/include/date.h File Reference}
+\label{date_8h}\index{/home/w-\/wilson/\+D\+S\+S\+C/first\+\_\+year/\+A\+P/advanced\+\_\+programming-\/2018-\/19/exercises/c++/04\+\_\+custom\+\_\+types/date/include/date.\+h@{/home/w-\/wilson/\+D\+S\+S\+C/first\+\_\+year/\+A\+P/advanced\+\_\+programming-\/2018-\/19/exercises/c++/04\+\_\+custom\+\_\+types/date/include/date.\+h}}
+
+
+Declaration of \hyperlink{class_date}{Date} class.  
+
+
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for date.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{date_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{date_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_invalid__day}{Invalid\+\_\+day}
+\begin{DoxyCompactList}\small\item\em Struct for exceptions regarding incorrect number of days per month. \end{DoxyCompactList}\item 
+class \hyperlink{class_date}{Date}
+\begin{DoxyCompactList}\small\item\em Implement a date class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{date_8h_a674553c60dd4ed7297e6c18d8139e067}\label{date_8h_a674553c60dd4ed7297e6c18d8139e067}} 
+enum \hyperlink{date_8h_a674553c60dd4ed7297e6c18d8139e067}{m\+\_\+enum} \{ \newline
+{\bfseries jan} = 1, 
+{\bfseries feb}, 
+{\bfseries mar}, 
+{\bfseries apr}, 
+\newline
+{\bfseries may}, 
+{\bfseries jun}, 
+{\bfseries jul}, 
+{\bfseries aug}, 
+\newline
+{\bfseries sep}, 
+{\bfseries oct}, 
+{\bfseries nov}, 
+{\bfseries dec}
+ \}\begin{DoxyCompactList}\small\item\em Enum Class cointaining the months of a year. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{date_8h_a1862604492a841a6b98e1a3061d95b96}\label{date_8h_a1862604492a841a6b98e1a3061d95b96}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \hyperlink{class_date}{Date} \&date)
+\item 
+\mbox{\Hypertarget{date_8h_a27425be265a0cc57e4f731825154ec4d}\label{date_8h_a27425be265a0cc57e4f731825154ec4d}} 
+bool {\bfseries operator==} (const \hyperlink{class_date}{Date} \&lhs, const \hyperlink{class_date}{Date} \&rhs)
+\item 
+\mbox{\Hypertarget{date_8h_ad12683e4457513f4f834e13c4e7f72f8}\label{date_8h_ad12683e4457513f4f834e13c4e7f72f8}} 
+bool {\bfseries operator!=} (const \hyperlink{class_date}{Date} \&lhs, const \hyperlink{class_date}{Date} \&rhs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Declaration of \hyperlink{class_date}{Date} class. 
+
+\begin{DoxyAuthor}{Author}
+Patrick Indri 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/01/19 
+\end{DoxyDate}

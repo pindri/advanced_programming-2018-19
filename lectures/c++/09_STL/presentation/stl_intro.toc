@@ -1,0 +1,20 @@
+\beamer@sectionintoc {1}{The C++ standard library}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Summary}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Headers}{6}{0}{1}
+\beamer@sectionintoc {2}{Iterators}{19}{0}{2}
+\beamer@subsectionintoc {2}{1}{What they are}{20}{0}{2}
+\beamer@subsectionintoc {2}{2}{Iterators in the STL}{21}{0}{2}
+\beamer@subsectionintoc {2}{3}{Iterator categories}{22}{0}{2}
+\beamer@sectionintoc {3}{Containers}{26}{0}{3}
+\beamer@subsectionintoc {3}{1}{Introduction}{27}{0}{3}
+\beamer@subsectionintoc {3}{2}{Sequence containers}{28}{0}{3}
+\beamer@subsectionintoc {3}{3}{Associative containers}{29}{0}{3}
+\beamer@subsectionintoc {3}{4}{Container representation}{31}{0}{3}
+\beamer@subsectionintoc {3}{5}{Overview}{37}{0}{3}
+\beamer@subsectionintoc {3}{6}{Examples}{39}{0}{3}
+\beamer@sectionintoc {4}{Algorithms}{42}{0}{4}
+\beamer@subsectionintoc {4}{1}{Introduction}{43}{0}{4}
+\beamer@subsectionintoc {4}{2}{Quick examples}{44}{0}{4}
+\beamer@sectionintoc {5}{Function objects}{49}{0}{5}
+\beamer@subsectionintoc {5}{1}{Introduction}{50}{0}{5}
+\beamer@subsectionintoc {5}{2}{Examples}{53}{0}{5}

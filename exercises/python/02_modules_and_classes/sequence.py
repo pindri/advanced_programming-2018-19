@@ -24,6 +24,9 @@ class Sequence():
     
     def insert(self, key, value):
         self._components.insert(key,value)
+    
+    def append(self, value):
+        self._components.append(value)
         
     def __str__(self):
         return str(self._components)

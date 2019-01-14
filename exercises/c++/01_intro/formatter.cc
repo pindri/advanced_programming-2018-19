@@ -1,8 +1,29 @@
+/**
+ * @file formatter.cc
+ * @brief Implements a simple text formatter
+ * 
+ * Breaks the lines longer than a given number of characters, does not
+ * brake words.
+ *
+ * @author Patrick Indri
+ * @date 10/10/18
+ *
+ */
+
 #include <iostream>
 #include <string>
 
+/*!
+ * Recursively splits a line until linelengh < n and prints it.
+ *
+ * @param n linelengh threshold
+ * @param line line to be splitter
+ * 
+ * @return none
+ */
 
-int split_line(int n, std::string line){
+
+void split_line(unsigned int n, std::string line){
 
     int pos;
     std::string newline;
@@ -29,24 +50,27 @@ int split_line(int n, std::string line){
         if (pos == 0) std::cout << line.length() << "\t" << line << std::endl;
     } 
 
-    return 0;
 }
 
 
+/*!
+ * Reads from the stdin line by line, checking if it needs to be splitted. If so,
+ * calls split_line to split it, adding the linelenght in front of the text.
+ *
+ * @param n linelengh threshold
+ * 
+ * @return none
+ */
 
-void formatter(int n){
+void formatter(unsigned int n){
 
     std::string line;
 
     while(std::getline(std::cin,line)){
-
         if (line.length() > n) {
             split_line(n, line);
         } else std::cout << line.length() << "\t" << line << std::endl;
-   
     }
-
-
 }
 
 

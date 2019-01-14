@@ -1,0 +1,31 @@
+\begin{theindex}
+
+  \item {/home/w-\/wilson/\+D\+S\+S\+C/first\+\_\+year/\+A\+P/advanced\+\_\+programming-\/2018-\/19/exercises/c++/04\+\_\+custom\+\_\+types/date/include/date.\+h}, 
+		\hyperpage{9}
+
+  \indexspace
+
+  \item {add\+\_\+day}
+    \subitem {Date}, \hyperpage{5}
+  \item {add\+\_\+days}
+    \subitem {Date}, \hyperpage{6}
+
+  \indexspace
+
+  \item {Date}, \hyperpage{5}
+    \subitem {add\+\_\+day}, \hyperpage{5}
+    \subitem {add\+\_\+days}, \hyperpage{6}
+    \subitem {is\+\_\+leap}, \hyperpage{6}
+  \item {date.\+cc}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Invalid\+\_\+day}, \hyperpage{7}
+  \item {is\+\_\+leap}
+    \subitem {Date}, \hyperpage{6}
+
+  \indexspace
+
+  \item {main.\+cc}, \hyperpage{12}
+
+\end{theindex}
