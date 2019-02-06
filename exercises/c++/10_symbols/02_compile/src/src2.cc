@@ -1,7 +1,7 @@
 #include <iostream>
 #include "utility.h"
 
-std::string greetings(){
+static std::string greetings(){
   std::string s{"Good afternoon\n"};
   return s;
 }

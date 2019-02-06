@@ -1,6 +1,11 @@
 #include "utility.h"
 #include "foo.h"
 
+void print_upper(const std::string& s);
+void print_lower(const std::string& s);
+
+double Foo::f = 0;
+
 int main()
 {
   print_lower("EXPECT TO SEE LOWER CASE");
