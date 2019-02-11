@@ -5,7 +5,7 @@
 
 struct A {
   int a;
-  A();
+  A(); // if I inline this it works
 };
 
 A::A() {

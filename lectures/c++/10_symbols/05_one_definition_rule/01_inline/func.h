@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-void dummy() {
+void dummy() {  // if I static or inline this then it works
   std::cout << "dummy\n";
 }
 

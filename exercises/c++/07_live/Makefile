@@ -26,7 +26,7 @@ format: $(SRC)
 .PHONY: format
 
 clean:
-	rm -f $(EXE) *~ *.txt
+	rm -f $(EXE) *.txt
 
 .PHONY: clean
 

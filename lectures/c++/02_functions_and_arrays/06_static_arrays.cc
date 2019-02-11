@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-  int ai[4];
+  int ai[4]{};
   float af[9];
   ai[0] = 9;    // first element
   af[8] = 3.3;  // last element
